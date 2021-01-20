@@ -1,0 +1,32 @@
+Họ và tên: Trần Hòa Bình
+Kinh nghiệm: 5 năm
+
+
+- một số bạn cần chú ý hơn:
+    + Ngọc Mông
+    + Đức
+Chú ý: để tìm hiểu đc 1 vấn đề luôn luôn đặt câu hỏi: what, why, how?
+
+
+- 1 khóa react thì nó bao gồm 28 buổi tất cả:
+    + 5 buổi học HTML, CSS, GIT
+    + 10 buổi học js, es (tất cả kiến thức)
+    + 13 học về thư viện Reactjs (Cơ bản).
+
+- một sô phần mêm mà các bạn cần cài đặt trước:
+    + VS code
+        cài đặt thêm các extension:
+            + auto rename tag
+            + auto close tag
+            + gitlens
+            + path intellisense
+            + open in browser
+    + git-scm (không phải github hay gitlab)
+
+    + skype: hoabinhvnua2
+
+- đi sâu hơn về lộ trình
+    + HTML5
+    + CSS: flex và grid css
+    + Javascript: Biến, function scope, block scope, kiểu dữ liệu, class, callback, async và sync...
+    + reactjs: cơ bản react, hook, redux, react-router-dom, middleware...
