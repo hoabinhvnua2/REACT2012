@@ -38,3 +38,12 @@ github, gitlab, bitbucket là nơi lưu trữ code tập trung
     - Tạo ra một nhánh mới để làm việc
         -> chú ý: branch name đưcọ quy ước như sau: feat/van-thanh
         + git checkout -b branch_name 
+    - Trước khi đẩy code lên nhánh hiện thì cần pull code từ nhánh chính về máy local
+        + git pull origin main
+    - đẩy code từ local lên repo:
+        + git status: để xem sự thay đổi của code
+        + git add . -> để thêm toàn bộ code đã chọn lên repo
+        + git commit -m "nội dung cần chú thích"
+        + git push origin feat/name : đẩy code mới nhất từ local lên nhánh của các bạn
+    - Sau khi đẩy code lên thành công thì các bạn cần vào web github để tạo pull request
+        tạo merge và ass cho anh.
