@@ -47,3 +47,12 @@ github, gitlab, bitbucket là nơi lưu trữ code tập trung
         + git push origin feat/name : đẩy code mới nhất từ local lên nhánh của các bạn
     - Sau khi đẩy code lên thành công thì các bạn cần vào web github để tạo pull request
         tạo merge và ass cho anh.
+
+    Buổi sau chúng ta học về HTML: 
+        + Link và image
+        + box model
+        + Css inline
+        + semantic HTML
+        + typography
+        + form
+        + table
