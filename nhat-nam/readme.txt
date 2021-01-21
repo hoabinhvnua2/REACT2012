@@ -8,3 +8,4 @@ Thứ 1:
 - Mong muốn:
 +Sau khóa này e mong muốn đủ kiến thức để nhẩy qua công việc fesher front end rectjs
 + Em sẽ cố gắng học thật tốt khóa này và hy vọng anh chia sẻ cho e một số kinh nghiêm để sau khóa học e đi phỏng vấn vào công ty đa quốc gia ạ
++ Chú ý 
