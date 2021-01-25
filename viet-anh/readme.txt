@@ -5,4 +5,4 @@ Thứ 1:
 Thứ 2:
 - Những vấn đề
 Thứ 3:
-- Góp ý
+- Góp ý mới
