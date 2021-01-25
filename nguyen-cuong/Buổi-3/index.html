@@ -4,11 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Buoi 3 </title>
+    <style>
+        body {
+            max-width: 1500px;
+            margin: auto;
+        }
+        
+        table {
+            margin: auto;
+        }
+        
+        fieldset {
+            width: 50%;
+            margin: auto;
+        }
+    </style>
 </head>
 
 <body>
-    <table border="1px" width='500' height='500' , style="border-collapse: collapse;">
+    <table border="1px" width='80%' height='500' , style="border-collapse: collapse;">
         <tr>
             <td colspan="4"></td>
 
@@ -30,6 +45,47 @@
         </tr>
 
     </table>
+
+    <form action="#">
+        <fieldset>
+            <legend>Đăng ký
+            </legend>
+            <table>
+                <tr>
+                    <td>Họ</td>
+                    <td><input type="text" name="first-name" id=""> </td>
+                </tr>
+                <tr>
+                    <td>Tên</td>
+                    <td><input type="text" name="last-name" id=""> </td>
+                </tr>
+                <tr>
+                    <td>Tuổi</td>
+                    <td><input type="text" name="Age" id=""> </td>
+                </tr>
+                <tr>
+                    <td>Tuổi</td>
+                    <td><input type="text" name="Age" id=""> </td>
+                </tr>
+                <tr>
+                    <td>Quê quán</td>
+                    <td>
+                        <select name="home-town" id="">
+              <option value=""></option>
+              <option value="HN">Ha Noi</option>
+              <option value="HCM">TP Ho Chi Minh</option>
+            </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><input type="submit" value="Submit"></td>
+                    <td><input type="reset" value="Reset"></td>
+                </tr>
+            </table>
+
+        </fieldset>
+    </form>
 </body>
 
 </html>
