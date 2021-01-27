@@ -4,38 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-    <table border="1" style="width:1000px;height:1000px"> 
-        <thead>
-            <tr>
-                <th colspan="4"></th>
+
+
+    <div id="table">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th colspan="4">Nam</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="4"> Nguyen</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td colspan="3">1</td>
+                  
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="form">
+        
+        <form action="">
             
-            </tr>
-            <tr>
-                <td rowspan="3"></td>
-                <td></td>
-                <td></td>
-                <td></td>
+            <label for="">Họ:</label> <input type="text" name="" id=""><br>
+            <label for="">Tên:</label> <input type="text"> <br>
+            <label for="">Tuổi:</label> <input type="text"> <br>
+            <label for="">Quê quán:</label> <input type="text"> <br>
+            
+        </form>
 
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td colspan="3"></td>
-            </tr>
-        </thead>
-        <tbody>
-
-        </tbody>
-    </table>
-
-    <form action="">
-        <label for="">Họ:</label> <input type="text" name="" id="">
-
-    </form>
+    </div>
+    
 </body>
 </html>
