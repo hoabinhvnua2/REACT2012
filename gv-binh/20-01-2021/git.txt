@@ -1,4 +1,4 @@
-git là hệ thống quản lý phân tán dữ liệu và nó là tool cung cấp các dòng lệnh để kết nối 
+gitgit là hệ thống quản lý phân tán dữ liệu và nó là tool cung cấp các dòng lệnh để kết nối 
 từ máy tính cá nhân đến repo
 github, gitlab, bitbucket là nơi lưu trữ code tập trung
 
