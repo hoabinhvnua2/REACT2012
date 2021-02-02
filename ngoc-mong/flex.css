@@ -12,20 +12,10 @@ div{
 .container-1{
     display: flex;
   }
-.item-1{
+.item-1,.item-2,.item-3,.item-4{
     flex: 1 1 25%;
 }
-.item-2{
-    flex: 1 1 25%;
 
-}
-.item-3{
-    flex: 1 1 25%;
-
-}
-.item-4{
-    flex: 1 1 25%;
-}
 .item-5{
     flex: 1 1 calc(75% + 2px);
 }
@@ -38,24 +28,10 @@ div{
 .item-8{
     flex: 1 1 calc(75% + 2px);
 }
-.item-9{
+.item-9,.item-10,.item-11,.item-12{
     flex: 1 1 50%;
 }
-.item-10{
-    flex: 1 1 50%;
-}
-.item-11{
-    flex: 1 1 50%;
-}
-.item-12{
-    flex: 1 1 50%;
-}
-.item-13{
-    flex: 1 1 33.33%;
-}
-.item-14{
-    flex: 1 1 33.33%;
-}
-.item-15{
-    flex: 1 1 33.33%;
+
+.item-13, .item-14, .item-15{
+    flex: 1 1 calc(100% / 3);
 }
