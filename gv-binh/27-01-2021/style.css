@@ -1,0 +1,152 @@
+
+
+/* h1#mau {
+    background-color: teal;
+}
+
+#mau {
+    background-color: violet;
+}
+
+h1[id=mau] {
+    background-color: yellowgreen;
+} */
+
+/* .intro {
+    background-color: red;
+    text-align: center;
+    border: 3px solid green;
+    outline: 2px solid aqua;
+} */
+
+/* h1 {
+    background-color: saddlebrown;
+} */
+
+/* 
+    class được ưu tiên hơn tagName
+    bộ chọn thuộc thính được ưu tiên hơn class
+    id đc ưu tiên hơn class
+    tagid đc ưu tiên hơn id
+*/
+
+/* p {
+    color: red;
+}
+
+section span {
+    color: green;
+}
+
+div span:first-child {
+    color: yellow;
+}
+
+div span:first-child:hover{
+    color: red;
+}
+div span:last-child {
+    color: pink;
+} */
+
+/* .cha {
+    border: 1px solid green;
+    max-width: 400px;
+    height: 500px;
+    background-image: url(../25-01-2021/logo-chan-trang-24h.png);
+    background-size: 100%;
+    margin: 5px 20px;
+    padding: 10px;
+    width: 500px;
+} */
+
+/* .con {
+    border: 1px solid red;
+    width: 100%;
+} */
+
+
+.cha {
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+    border: 1px solid green;
+    position: relative;
+    transition: all 2s;
+    /* animation */
+    animation-name: test;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+@keyframes test {
+    /* from {left: 0px;}
+    to {left: 200px;} */
+    0% {
+        background-color: yellowgreen;
+        left: 0px;
+        top: 0px;
+        transform: rotate(0deg);
+    }
+    25% {
+        background-color: red;
+        left: 400px;
+        top: 0px;
+        transform: rotate(90deg);
+    }
+    50% {
+        background-color: green;
+        left: 400px;
+        top: 400px;
+        transform: rotate(1800deg);
+        height: 400px;
+        width: 400px;
+        border-radius: 50%;
+    }
+    75% {
+        background-color: blue;
+        left: 0px;
+        top: 400px;
+        transform: rotate(2700deg);
+    }
+    100% {
+        background-color: yellow;
+        left: 0px;
+        top: 0px;
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+/* .con2 {
+    height: 300px;
+    width: 300px;
+    background-color: aqua;
+    border: 1px solid blue;
+    position: absolute;
+    z-index: 1;
+}
+.con3 {
+    height: 150px;
+    width: 150px;
+    background-color: green;
+    border: 1px solid pink;
+    position: fixed;
+    z-index: 3;
+    right: 0;
+    bottom: 0;
+}
+
+.sticky {
+    background-color: red;
+    color: #fff;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+} */

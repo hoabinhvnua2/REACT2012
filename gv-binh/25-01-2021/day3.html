@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Học React</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="tin tức, news" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO:  -->
+    <!-- add css -->
+    <link rel="stylesheet" href="style.css" />
+    <style></style>
+    <!-- mỗi 1 trang web chỉ có duy nhất 1 thể base -->
+    <base href="" target="" />
+  </head>
+  <body>
+    <!-- các cặp thẻ tiêu đề -->
+    <h1>Tôi là h1</h1>
+    <h2>Tôi là h2</h2>
+    <h3>Tôi là h3</h3>
+    <h4>Tôi là h4</h4>
+    <h5>Tôi là h5</h5>
+    <h6>Tôi là h6</h6>
+
+    <!-- Thẻ dùng để hiển thị nhưng đoạn văn bản -->
+    <!-- br dùng để xuống dòng -->
+    <!-- hr  -->
+    <p>
+      Xin chào bạn <b>Ngọc</b> học viên lớp react <br />
+      Ngày mai các bạn nhớ làm bai tập nhé
+    </p>
+    <p>hi các bạn</p>
+
+    <hr />
+
+    <pre>
+        Xin chào các bạn học viên lớp react
+            ***
+        Ngày mai các bạn nhớ làm bai tập nhé
+    </pre>
+
+    <hr />
+    <span> Xin chào </span>
+
+    <span> các bạn! </span>
+
+    <p>
+      Xin chào bạn <ins>Ngọc</ins> thành viên mới thay thế cho bạn
+      <del>Lương</del>
+    </p>
+    <!-- Link nó là đường dẫn -->
+
+    <a href="https://www.google.com.vn" target="blank">GOOGLE</a>
+
+    <a href="https://www.24h.com.vn/" target="blank">
+      <img
+        src="./logo-chan-trang-24h.png"
+        alt="Tôi là 24h"
+        width="50"
+        height=""
+      />
+    </a>
+
+    <!-- table dùng để hiển thị bảng -->
+    <table border="1" style="border-collapse: collapse" width="100%">
+      <caption>
+        Bảng sinh viên
+      </caption>
+      <thead>
+        <tr>
+          <th>stt</th>
+          <th>Tên</th>
+          <th>Số ĐT</th>
+          <th>Giới tính</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="2">1</td>
+          <!-- <td>Ngọc</td> -->
+          <td>123456</td>
+          <td rowspan="2">Nữ</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Đức</td>
+          <td>1234567</td>
+          <!-- <td>Nam</td> -->
+          <!-- ctrl / -->
+          <!-- alt shift down  -->
+        </tr>
+      </tbody>
+    </table>
+
+
+    <!-- ul li hiển thị danh sách ko có số thứ tự -->
+    <ul>
+        <li>Hà Nội</li>
+        <li>Hà Nam</li>
+        <li>Sài Gòn</li>
+    </ul>
+    <!-- hiển thị danh sách có sô thứ tự ol li -->
+    <ol>
+        <li>Kiên Giang</li>
+        <li>Lào Cai</li>
+        <li>Cần Thơ</li>
+    </ol>
+
+
+    <!-- form -->
+
+    <form action="" target="" method="">
+        <label for="">Type text: </label> 
+        <input placeholder="Nhập tên" type="text" name="" id="" class="">
+        <br>
+        <label for="">Type number: </label>
+        <input type="number" name="" id="">
+        <br>
+
+        <label for="">Type checkbox</label>
+        <input type="checkbox" name="" id="">
+        <input type="checkbox" name="" id="">
+
+        <br>
+        <label for="">Type radio</label>
+        <input type="radio" name="gender" id="" value="nam"> Nam
+        <input type="radio" name="gender" id="" value="nữ">Nữ
+
+        <br>
+        <label for="">type color</label>
+        <input type="color" name="" id="">
+         <br>
+
+         <br>
+         <label for="">type date</label>
+         <input type="date" name="" id="">
+
+         <br>
+
+         <label for="">Type email</label>
+         <input type="email" name="" id="">
+
+         <input type="file" name="" id="">
+
+
+         <br>
+         <input type="button" value="Đăng nhập">
+         <input type="submit" value="Logout">
+
+         <button type="button">Login</button>
+
+         <select name="" id="">
+
+            <option value="">hà Nội</option>
+            <option value="">Thái Binh</option>
+         </select>
+    </form>
+    <!-- ko nên viết script ở đây -->
+    <script></script>
+  </body>
+</html>
