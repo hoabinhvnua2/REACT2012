@@ -10,23 +10,23 @@
 }
 
 .item-1{
-    flex: 1 1 25%;
+    flex: 1 1 calc(25% - 4px);
 }
 .item-2{
-    flex: 1 1 25%;
+    flex: 1 1 calc(25% - 4px);
 }
 .item-3{
-    flex: 1 1 25%;
+    flex: 1 1 calc(25% - 4px);
 }
 .item-4{
-    flex: 1 1 25%;
+    flex: 1 1 calc(25% - 4px);
 }
 
 .item-5{
-    flex: 1 1 75%;
+    flex: 1 1 calc(75% - 4px);
 }
 .item-6{
-    flex: 1 1 25%;
+    flex: 1 1 calc(25% - 4px);
 }
 
 .item-7{
