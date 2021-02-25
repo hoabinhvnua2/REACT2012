@@ -1,0 +1,60 @@
+.container-1 div{
+    border: 1px solid green;
+    box-sizing: border-box;
+    margin: 1px 1px; 
+}
+.container-1{
+    display: flex;
+    word-wrap: wrap;
+
+}
+
+.item-1{
+    flex: 1 1 25%;
+}
+.item-2{
+    flex: 1 1 25%;
+}
+.item-3{
+    flex: 1 1 25%;
+}
+.item-4{
+    flex: 1 1 25%;
+}
+
+.item-5{
+    flex: 1 1 75%;
+}
+.item-6{
+    flex: 1 1 25%;
+}
+
+.item-7{
+    flex: 1 1 25%;
+}
+.item-8{
+    flex: 1 1 75%;
+}
+.item-9{
+    flex: 1 1 50%;
+}
+.item-10{
+    flex: 1 1 50%;
+}
+
+.item-11{
+    flex: 1 1 50%;
+}
+.item-12{
+    flex: 1 1 50%;
+}
+.item-13{
+    flex: 1 1 33%;
+}
+
+.item-14{
+    flex: 1 1 33%;
+}
+.item-15{
+    flex: 1 1 33%;
+}
