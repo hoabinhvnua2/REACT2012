@@ -1,0 +1,40 @@
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --distance-margin: 5px;
+    --distance-border: 2px;
+    --distance_margin_border : calc(var(--distance-margin) + var(--distance-margin) + var(--distance-border) + var(--distance-border) );
+}
+
+.container{
+    display : flex;
+    width : 1000px;
+    height:50px;   
+}
+
+.container div{
+    border : var(--distance-border) solid green;
+    
+    margin : var(--distance-margin);
+}
+
+.box1{
+    flex : 1 1 calc(25% - var(--distance_margin_border));
+     
+}
+
+.box2{
+    flex : 1 1 calc(75% - var(--distance_margin_border));
+   
+}
+.box3{
+    flex :1 1 calc(50% - var(--distance_margin_border));
+    
+}
+.box4{
+    flex : 1 1 calc(33.33% - var(--distance_margin_border));
+    
+}
