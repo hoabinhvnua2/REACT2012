@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+}
+.container-1 {
+    background-color: yellow;
+    display: flex;
+}
+.container-1 div {
+    margin: 5px;
+}
+.container-2 div {
+    margin: 5px;
+}
+.container-3 div {
+    margin: 5px;
+}
+.container-4 div {
+    margin: 5px;
+}
+.container-5 div {
+    margin: 5px;
+}
+.container-6 div {
+    margin: 5px;
+}
+.block-1 {
+    flex: 1 1 25%;
+    border: 1px solid red;
+}
+.block-2 {
+    flex: 1 1 25%;
+    border: 1px solid red;
+}
+.block-3 {
+    flex: 1 1 25%;
+    border: 1px solid red;
+}
+.block-4 {
+    flex: 1 1 25%;
+    border: 1px solid red;
+}
+
+.container-2 {
+    background-color: yellow;
+    display: flex;
+}   
+
+.block-5 {
+    flex: 1 1 calc(75%);
+    border: 1px solid red;
+}
+.block-6 {
+    flex: 1 1 calc(25%);
+    border: 1px solid red;
+}
+.container-3 {
+    background-color: yellow;
+    display: flex;
+}   
+
+.block-7 {
+    flex: 1 1 25%;
+    border: 1px solid red;
+}
+.block-8 {
+    flex: 1 1 75%;
+    border: 1px solid red;
+}
+.container-4 {
+    background-color: yellow;
+    display: flex;
+}   
+
+.block-9 {
+    flex: 1 1 50%;
+    border: 1px solid red;
+}
+.block-10 {
+    flex: 1 1 50%;
+    border: 1px solid red;
+}
+.container-5 {
+    background-color: yellow;
+    display: flex;
+}   
+
+.block-11 {
+    flex: 1 1 50%;
+    border: 1px solid red;
+}
+.block-12 {
+    flex: 1 1 50%;
+    border: 1px solid red;
+}
+.container-6 {
+    background-color: yellow;
+    display: flex;
+}   
+
+.block-13 {
+    flex: 1 1 33%;
+    border: 1px solid red;
+}
+.block-14 {
+    flex: 1 1 33%;
+    border: 1px solid red;
+}
+.block-15 {
+    flex: 1 1 33%;
+    border: 1px solid red;
+}

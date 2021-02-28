@@ -1,0 +1,15 @@
+*{
+    padding :  0;
+    margin : 0;
+    box-sizing: border-box;
+}
+
+.grid-box{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: auto  auto auto auto auto ;
+}
+.grid-box div{
+    border: 1px solid green;
+}
+
