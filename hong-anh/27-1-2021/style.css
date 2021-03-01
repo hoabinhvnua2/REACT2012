@@ -1,0 +1,136 @@
+/* 
+độ ưu tiên: 
+inline > tagname#id > id > chọn theo thuộc tính > class > tag name 
+chọn theo thuộc tính: h1[id=""]
+*/
+/* 
+style theo class: .tên class
+style theo id: #tên id
+*/
+
+
+/* h1#color {
+    background-color: red;
+}
+#color {
+    background-color: green;
+}
+h1[id='color'] {
+    background-color: greenyellow;
+}
+.intro {
+    background-color: goldenrod;
+    text-align: center;
+    border: 1px solid blueviolet;
+    outline: 5px solid lightcoral;
+}
+h1 {
+    background-color: blueviolet;
+} */
+
+/* .cha {
+    border: 1px solid greenyellow;
+    height: 500px;
+    width: 200px;
+    background-image: url(1024px-Facebook_Logo_\(2019\).png);
+    margin: 5px 10px;
+    padding: 10px 5px;
+
+} */
+/* .con {
+    border: 1px solid red;
+    width: 100%;
+} */
+/* p {
+   color: red; 
+}
+section span {
+    color: green;
+}
+div :first-child {
+    color: blue;
+}
+div :first-child:hover {
+    color: greenyellow;
+}
+div :last-child {
+    color:grey;
+} */
+
+.cha {
+    height: 500px;
+    width: 500px;
+    background-color: greenyellow;
+    border: 1px solid red;
+    /* cố định vị trí */
+    position: relative; 
+    /* animation  luôn đi cùng với keyframes*/
+    animation-name: test;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+@keyframes test {
+    /* from {left: 0px;}
+    to {left: 500px;} */
+    
+    0% {
+        background-color: gold;
+        left: 0;
+        transform: rotate(0deg);
+    }
+    25% {
+        background-color: red;
+        left: 300px;
+        transform: rotate(180deg);
+    }
+    100% {
+        background-color: blue;
+        left: 300px;
+        top: 700px;
+        transform: rotate(0deg);
+    }
+}
+/* 
+absolute đi cùng với z-index 
+fixed: đặt vị trí nó ở đâu thì ở đó, ngay cả khi dduocj cuộn,không quan tâm đến cha.
+*/
+.con1 {
+    height: 100px;
+    width:100px;
+    background-color: grey;
+    border:1px solid burlywood;
+    position: absolute;
+    z-index: 1; /*độ ưu tiên của layer*/
+    right: 0;
+    bottom: 0;
+}
+.con2 {
+    height: 50px;
+    width: 50px;
+    background-color:blue;
+    border:1px solid teal;
+    position: absolute;
+    z-index: 2;
+}
+.con3 {
+    height: 150px;
+    width: 150px;
+    background-color:red;
+    border:1px solid teal;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+.sticky {
+    background-color: red;
+    color: #fff;
+    padding: 10px;
+    /* cố định ở top khi lăn chuột quá vị trí của nó */
+    position: sticky;
+    top: 0;
+}

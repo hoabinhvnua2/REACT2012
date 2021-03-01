@@ -1,0 +1,16 @@
+.container-1 div {
+    border: 1px solid red;
+}
+
+.container-1 {
+    display: flex;
+}
+.item1 {
+    width: 25%;
+    height: 100PX;
+}
+
+.item2 {
+    width: 75%;
+    height: 100px;
+}
