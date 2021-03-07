@@ -1,0 +1,212 @@
+/* Header - Logo - Menu */
+
+.custom-row-1 {
+    width: 100%;
+}
+
+.custom-nav {
+    background-color: rgb(76, 76, 187);
+}
+
+.menu {
+    list-style: none;
+    text-align: center;
+    width: 100%;
+    font-size: 13px;
+    display: block;
+}
+
+.menu-item {
+    display: inline-table;
+    margin: 20px 0px 10px 10px;
+}
+
+.menu .active a {
+    color: yellow;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu-wrap {
+    align-items: center;
+}
+
+.logo {
+    text-align: center;
+    color: white;
+    font-weight: 700;
+}
+
+.logo p {
+    margin-top: 20px;
+}
+
+.bar-btn {
+    display: none;
+}
+
+
+/* Content */
+
+.banner {
+    width: 100%;
+}
+
+.banner img {
+    width: 100%;
+    margin: 0;
+}
+
+.custom-dash img {
+    width: 50px;
+    aspect-ratio: auto 20 / 20;
+    height: 20px
+}
+
+.about-us {
+    width: 100%;
+    margin-top: 70px !important;
+}
+
+.custom-about-us img {
+    width: 100%;
+}
+
+.strong-content {
+    font-weight: 600;
+}
+
+.small-content {
+    font-size: 12px;
+}
+
+.custom-image {
+    width: 100%;
+    margin-top: 70px !important;
+}
+
+.font-weight-custom {
+    font-weight: 700 !important;
+}
+
+.cont .container-fluid .news {
+    align-content: flex-end;
+}
+
+.custom-card a {
+    text-decoration: none;
+    color: black;
+}
+
+.content-news {
+    margin-top: 70px !important;
+}
+
+.dash {
+    width: 50px;
+    aspect-ratio: auto 20 / 20;
+    height: 20px
+}
+
+.contact-wrap .row {
+    width: 100%;
+}
+
+.title-contact {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.form-control {
+    width: 100% !important;
+}
+
+.custom-btn {
+    color: aliceblue !important;
+    width: 40% !important;
+}
+
+.button-wrap {
+    justify-content: flex-end;
+}
+
+.list-cate .list-cate-item {
+    font-size: 12px;
+}
+
+.content-text {
+    font-size: 12px;
+}
+
+.input-footer {
+    border: none;
+    background-color: black;
+    border-bottom: 1px solid whitesmoke;
+    width: 35%;
+}
+
+hr {
+    color: red;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.des {
+    font-size: 11px;
+}
+
+@media(max-width: 576px) {
+    .custom-nav {
+        background-color: aliceblue;
+    }
+    .menu-item {
+        display: block;
+    }
+    .menu-item a {
+        color: black;
+    }
+    .menu .active a {
+        color: rgb(109, 109, 41);
+    }
+    .menu {
+        list-style: none;
+        text-align: left;
+        width: 100%;
+        font-size: 13px;
+        display: none;
+    }
+    .logo {
+        text-align: center;
+        color: blue;
+        font-weight: 700;
+        display: flex;
+        justify-content: space-between;
+    }
+    .bar-btn {
+        display: inline-block;
+        margin-top: 20px;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        width: 50px;
+        padding: 0;
+    }
+    .name-owner {
+        padding: 0px 50px;
+    }
+}
+
+@media(max-width: 1000px) {
+    .custom-btn {
+        color: aliceblue !important;
+        width: 40% !important;
+        font-size: 10px !important;
+    }
+    .button-wrap {
+        justify-content: center;
+        font-size: 10px !important;
+    }
+}
