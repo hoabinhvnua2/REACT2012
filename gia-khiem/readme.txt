@@ -1,0 +1,2 @@
+- Điểm mạnh của em : hiện tại em vẫn còn trẻ và đam mê học hỏi
+- điểm yếu : khi code gặp nhiều bug và chưa thể tìm ra câu trả lời nên hỏi nản ạ
