@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <input type="text" name="" id="userName" value="   hoabinh  "> -->
+
+    <script>
+      // let user = document.getElementById('userName').value;
+      // let a = '12345';
+      // console.log('user:', user);
+      // console.log('user:', user.trim());
+      // console.log(a.length);
+
+      // a[0] = 3;
+      // console.log(a);
+
+      // Mảng
+
+      // cách tạo ra 1 mảng 1 chiều
+      let arr = [];
+      // let arrLength = arr.length;
+
+      // for (let index = 0; index < arrLength; index++) {
+      //     console.log(arr[index])
+      // }
+      // sử dụng cho Array
+      // for (const item of arr) {
+      //     console.log(item)
+      // }
+
+      // for in sử dụng cho object
+      // for (const key in arr) {
+      //     console.log('key', key)
+      // }
+
+      //   arr.push(1);
+      //   arr.push(2);
+      //   arr.push(4);
+
+      //   console.log(arr);
+
+      //   arr.forEach((element, index) => {
+      //     // console.log(element)
+      //     console.log(index);
+      //   });
+
+      //   let kq;
+      //   [1, 1, 2, 3, 4].reduce((
+      //     accumulator,
+      //     currentValue,
+      //     currentIndex,
+      //     array
+      //   ) => {
+      //       kq = accumulator + currentValue;
+      //     return kq;
+      //   }, 0)
+
+      // cho 1 object sau
+      let hi = "xin chao cac ban";
+      let arrHi = hi.split("");
+
+      console.log(arrHi);
+      let kq;
+      arrHi.reduce((report, value) => {
+        if (value in report) {
+          report[value]++;
+        } else {
+          report[value] = 1;
+        }
+        kq = report;
+        return kq;
+      }, {});
+      console.log(kq);
+
+      //lần 1: report = {}, value = x => report = {x: 1}
+      //lần 2: report = {x: 1}, value = i => report = {x: 1, i: 1}
+      //lần 3: report = {x: 1, i: 1}, value = n => report = {x: 1, i: 1, n: 1}
+      //....
+      //lần 15: report = {x: 1, i: 1, n: 1},  value = n, report = {x: 1, i: 1, ..., n: 2}
+    </script>
+  </body>
+</html>
