@@ -1,0 +1,23 @@
+.container-1 div {
+    border: 10px solid green;
+}
+.container-1{
+    display: flex;
+}
+
+.item01{
+    flex: 1 1 25%;
+    display: flex;
+}
+
+.item02{
+    flex: 1 1 75%;
+}
+
+.sub01{
+    flex: 1 1 50%;
+}
+
+.sub02{
+    flex: 1 1 50%;
+}
