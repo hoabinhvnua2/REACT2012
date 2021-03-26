@@ -1,0 +1,23 @@
+.custom-bg {
+    background-color: #007bff!important;
+}
+.custom-text-primary {
+    color: #fff !important;
+}
+.custom-d-none {
+    display: none;
+}
+.custom-justify-end {
+    justify-content: flex-end;
+}
+@media only screen and (max-width: 576px) {
+    .custom-bg {
+        background-color: #f8f9fa!important;
+    }
+    .custom-text-primary {
+        color: #007bff !important;
+    }
+    .custom-d-none {
+        display: block;
+    }
+}
