@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="root"></div>
+
+    <script>
+        const root = document.getElementById('root');
+        // tạo hàm tính sô mũ: soMu(o, n) o^n
+            function soMu(coSo, soMu) {
+                let kq = 1
+                for (let index = 0; index < soMu; index++) {
+                    kq *= coSo;
+                }
+                return kq
+            }
+            console.log(soMu(2,3))
+
+            // hàm đệ quy
+            function pow(x, n) {
+                if(n === 0) {
+                    return 1;
+                } else if (n === 1) {
+                    return x;
+                } else {
+                    return x * pow(x, n-1)
+                }
+            }
+            console.log(pow(2,1))
+
+        // arrow function
+        const showName = (x, y) => x * y
+        // bị lỗi hàm contructor
+        // const hi = new showName();
+        // console.log(hi)
+
+        const arr = [1,2,3,4];
+        const arrAdd = arr.map(v => v * 2);
+        const arrFn = arr.map(function(v) {
+           return v * 2
+        });
+        console.log(arrAdd)
+        console.log(arrFn)
+
+        // Promise
+        // const myPromise = new Promise((res, rej) => {
+        //     return res('Ok');
+        // })
+        // console.log(myPromise.then(v => console.log(v)).catch(e => console.log(e)))
+
+        // Call nhiều promise cùng lúc
+        // const a = Promise.resolve('được rồi')
+        // const b = Promise.resolve('Ok rồi')
+        // const c = Promise.reject('Sai')
+
+        // const d = Promise.all([a, c, b]).then(([t,f]) => {
+        //     console.log('t', t)
+        //     console.log('f', f)
+        // }).catch(e => console.log(e))
+        // console.log(d)
+
+
+        // Áp dụng promise vào thực tế
+
+        const result = fetch(`https://6050aa4a5346090017670332.mockapi.io/list-product`)
+            .then(v => v.json()).then(data => {
+                data.map(value => console.log(value))
+            }).catch(e => console.log(e));
+            
+        console.log(result)
+
+
+        const userName = [1,2,3,4];
+        userName.map(v => console.log(v));
+
+        // ví dụ async await
+        let api = fetch(`https://6050aa4a5346090017670332.mockapi.io/list-product`);
+
+        let inner = ''
+        const callApi = async () => {
+            const resultApi = await api;
+            resultApi.json().then(v => {
+                v.map(data => {
+                    inner +=`<p> ${data.product_name}</p>`;
+                })
+                root.innerHTML = inner;
+               
+            }).catch(e => console.log(e));
+        }
+        callApi();
+
+    </script>
+    
+</body>
+</html>
