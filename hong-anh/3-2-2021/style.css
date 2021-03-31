@@ -1,0 +1,12 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+.bd-1 {
+    border: 1px solid red;
+}
+.box-1 {
+    grid-column-start: 1;
+    grid-column-end: span 3;
+}
