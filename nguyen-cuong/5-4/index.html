@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./ style.css" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <div class="register">
+      <h1 class="register__heading">Registration Form</h1>
+      <form class="register-form">
+        <div class="register-form__group">
+          <label for="name" class="register-form__label">Username</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="register-form__input"
+          />
+          <span class="register-form__err" id="err-username">Check Check</span>
+        </div>
+        <div class="register-form__group">
+          <label for="password" class="register-form__label">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            class="register-form__input"
+          />
+          <span class="register-form__err">Check Check</span>
+        </div>
+        <div class="register-form__group">
+          <label for="cfpassword" class="register-form__label"
+            >Confirm Password</label
+          >
+          <input
+            type="password"
+            name="cfpassword"
+            id="cfpassword"
+            class="register-form__input"
+          />
+          <span class="register-form__err">Check Check</span>
+        </div>
+        <div class="register-form__group">
+          <label for="email" class="register-form__label">Email</label>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            class="register-form__input"
+          />
+          <span class="register-form__err">Check Check</span>
+        </div>
+        <button class="register-form__submit" type="submit">Register</button>
+      </form>
+    </div>
+  </body>
+  <script src="./app.js"></script>
+</html>
