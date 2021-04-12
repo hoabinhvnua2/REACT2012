@@ -1,0 +1,10 @@
+$main-color: red;
+ul {
+  @for $var from 1 through 5 {
+    @if ($var % 2 == 0) {
+      li:nth-child(#{$var}) {
+        color: $main-color;
+      }
+    }
+  }
+}
