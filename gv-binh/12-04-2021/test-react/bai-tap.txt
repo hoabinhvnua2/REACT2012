@@ -1,0 +1,14 @@
+Tạo data fake hoặc call API lấy vè danh sách sản phẩm và show lên giao diện table sử dụng
+React class component.
+
+// note
+1. cách khởi tạo project
+2. cấu trúc thư mục
+3. class component là gì? và function component là gì? 
+trước bản 16.8 và sau bản 16.8 thì có sự thay đổi gi?
+4. State là gì, cách khởi và cập nhật State
+5. props là gì? cách truyền Props từ cha vào con
+6. điều kiện để render(hiển thị hoặc ẩn đi)
+7. list và key
+8. React.Fragment 
+9. lifecycle react js
