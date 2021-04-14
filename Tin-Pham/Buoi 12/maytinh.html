@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="a">
+    <input type="text" id="b">
+    <br>
+    <br>
+    <button id="cong" onclick="cong('+')">+</button>
+    <button id="tru" onclick="tru('-')">-</button>
+    <button id="nhan" onclick="nhan('*')">*</button>
+    <button id="chia" onclick="chia('/')">/</button>
+
+    <p>Ket qua la: </p>
+    <p id="kq"></p>
+
+    <script>
+        function cong () {
+        console.log(document.getElementById("cong").value);
+        document.getElementById("kq").innerHTML = +document.getElementById("a").value + +document.getElementById("b").value;
+        document.getElementById("cong").style.backgroundColor = 'yellow';
+        document.getElementById("tru").style.backgroundColor = 'grey';
+        document.getElementById("nhan").style.backgroundColor = 'grey';
+        document.getElementById("chia").style.backgroundColor = 'grey';
+        }
+
+        function tru () {
+        document.getElementById("kq").innerHTML = +document.getElementById("a").value - +document.getElementById("b").value;
+        document.getElementById("cong").style.backgroundColor = 'grey';
+        document.getElementById("tru").style.backgroundColor = 'yellow';
+        document.getElementById("nhan").style.backgroundColor = 'grey';
+        document.getElementById("chia").style.backgroundColor = 'grey';
+        }
+
+        function nhan () {
+        document.getElementById("kq").innerHTML = +document.getElementById("a").value * +document.getElementById("b").value;
+        document.getElementById("cong").style.backgroundColor = 'grey';
+        document.getElementById("tru").style.backgroundColor = 'grey';
+        document.getElementById("nhan").style.backgroundColor = 'yellow';
+        document.getElementById("chia").style.backgroundColor = 'grey';
+        }
+
+        function chia () {
+        document.getElementById("kq").innerHTML = +document.getElementById("a").value / +document.getElementById("b").value;
+        document.getElementById("cong").style.backgroundColor = 'grey';
+        document.getElementById("tru").style.backgroundColor = 'grey';
+        document.getElementById("nhan").style.backgroundColor = 'grey';
+        document.getElementById("chia").style.backgroundColor = 'yellow';
+        }
+
+
+    </script>
+</body>
+</html>
