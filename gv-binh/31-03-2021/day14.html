@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body id="body">
+    <!-- <button type="button" id="hello" onmousedown="sayHello()"> Xin chào bạn</button>
+    <br>
+    <input type="text" oninput="showName(event)" > -->
+    <!-- oninput và onchange -->
+
+    <!-- <div class="text">
+        <p>ooo</p>
+    </div>
+    <div class="text1">
+        <p>ooo</p>
+    </div>
+    <div class="text2">
+        <p>ooo</p>
+    </div>
+    <div class="text">
+        <p>ooo</p>
+    </div>
+    <div class="text3">
+        <p>ooo</p>
+    </div>
+    <div class="text">
+        <p>ooo</p>
+    </div>
+    <div id="container">
+        xín chào
+    </div>
+
+    <input type="text" >
+    <input type="password">
+
+    <input type="button" value="Save" id="aaaa">
+
+
+
+    <select name="" id="" onchange="showName(event)">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+    </select> -->
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">STT</th>
+          <th scope="col">Tên SP</th>
+          <th scope="col">Số lượng</th>
+          <th scope="col">Giá bán</th>
+        </tr>
+      </thead>
+      <tbody id='container'></tbody>
+    </table>
+
+    <script>
+        document.getElementById('body').innerHTML += `<p> Xin chào</p>`
+      // alert('Xin chào các bạn lớp react');
+      // tương tác với DOM c1
+      // document.getElementById('hello').addEventListener('click', function(){
+      //     alert('Xin chào các bạn lớp react')
+      // })
+      //   console.log(document.querySelector("div.text2"));
+      //   console.log(document.querySelectorAll("div.text"));
+      //C2
+      //   function sayHello() {
+      //     alert("Xin chào các bạn lớp react");
+      //   }
+      //   console.log(document.getElementById("aaaa").value);
+      //   function showName(e) {
+      //     console.log(e.target.value);
+      //   }
+
+      //   document.getElementById("container").innerHTML +=
+      //     "<strong> Xin chào các bạn lớp React </strong>";
+      // Tạo gia diện như sau
+
+      // yeu call API vaf show ra danh sach san pham
+
+      const getProducts = async () => {
+        let html = "";
+        try {
+          const result = await fetch(
+            "https://6050aa4a5346090017670332.mockapi.io/list-product"
+          );
+          result.json().then((data) => {
+            data.map((value, index) => {
+              html +=` <tr>
+          <th scope="row">${index + 1}</th>
+          <td>${value.product_name}</td>
+          <td>${value.quantity}</td>
+          <td>${value.price}</td>
+        </tr>`;
+            });
+
+        //    document.getElementById('container').innerHTML = html;
+          });
+        } catch (error) {
+          console.log(error);
+        }
+      };
+
+      getProducts();
+    </script>
+  </body>
+</html>

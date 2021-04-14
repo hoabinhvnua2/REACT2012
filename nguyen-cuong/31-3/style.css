@@ -1,0 +1,25 @@
+.wrap__input {
+  display: flex;
+  justify-content: space-around;
+}
+
+.wrap__input input {
+  width: calc(50% - 50px);
+  font-size: 20px;
+  height: 48px;
+}
+#btns button {
+  width: 25%;
+  height: 36px;
+  font-size: 18px;
+  margin: 0;
+}
+#res {
+  background-color: #e7e1e1;
+  border: solid 1px;
+  height: 48px;
+  font-size: 20px;
+}
+button.is-focus {
+  background-color: yellow;
+}

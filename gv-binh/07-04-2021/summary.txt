@@ -1,0 +1,19 @@
+HTML: 
+    + Nắm đc các loại vào từng trường hợp, mục đích
+    + Chú các thẻ semantic
+CSS: 
+    + Nắm được các thuộc tính trong css
+    + Biết các cấp độ ưu tiên để style chuẩn
+    + Nắm được box-model
+    + Nắm được cú pháp và các rule trong SCSS
+JS:
+    + Hiểu được về fuction, variable scope (lexical scope) -> cloure
+    + var, let, const ý nghĩa và cash dùng
+    + Nắm vững các câu điều rẽ nhánh, vòng lặp, các toán tử
+    + Hiểu về array và nắm đc các hàm của array
+    + Nắm được hàm contructor (design partte)
+    + Hiểu về object và prototype và các hàm xử lý object
+    + Hiểu về callback, promise và async await để xử lý bất đồng bộ
+    + Nắm đưuọc các event với DOM
+    + Nắm được cá kiến thức về hàm và hàm nâng cao
+    

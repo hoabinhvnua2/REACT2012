@@ -1,0 +1,99 @@
+// import css
+@import './common/color';
+
+
+// extend
+.custom-border {
+  border: 1px solid $colorRed;
+}
+
+// mixin and include
+@mixin containerStyle($initHeight, $initPadding) {
+  height: $initHeight;
+  border: 1px solid $colorGreen;
+  padding: $initPadding;
+}
+
+// function
+@function createHeight($total, $num) {
+  @if $total < 0 {
+    @return 200px;
+  }
+
+  @else {
+    @return $total/$num;
+  }
+}
+
+// for
+$length: 6;
+
+@for $index from 1 to $length {
+  @if (not ($index % 2==0)) {
+    .items-#{$index} {
+      color: $colorRed;
+    }
+  }
+}
+
+// while
+$i: 1;
+@while $i < $length {
+  @if (not ($i % 2==0)) {
+    .items-#{$i} {
+      color: $colorRed;
+    }
+  }
+
+  $i: $i+1;
+}
+
+
+// Nested
+// .container {
+//   @include containerStyle(400px, 5px);
+
+//   .item-1 {
+//     @extend .custom-border;
+//     height: createHeight(-200px, 5);
+//     margin-bottom: 5px;
+//   }
+
+//   .item-2 {
+//     @extend .custom-border;
+//     height: 100px;
+//     margin-bottom: 5px;
+//   }
+
+//   .item-3 {
+//     @extend .custom-border;
+//     height: 100px;
+//     display: flex;
+
+//     .item-4 {
+//       border: 1px solid $colorAqua;
+//       height: 80px;
+//       flex: 1;
+//     }
+
+//     .item-5 {
+//       border: 1px solid $colorAqua;
+//       height: 80px;
+//       flex: 1;
+//     }
+//   }
+// }
+
+// theo chuẩn BEM
+.container {
+  height: 400px;
+  &.-background {
+    background-color: aqua;
+  }
+  &__item-1 {
+    background-color: red;
+    &.-color {
+      color: yellow;
+    }
+  }
+}
