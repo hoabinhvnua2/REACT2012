@@ -1,0 +1,17 @@
+what, why, how
+
+Context là nó giúp truyền data xuyên suốt component tree mà không cần sử dụng đến props qua từng level
+Tu tưởng: tạo ra 1 nơi gọi là store và ở đây sẽ tập hợp các state, 
+    nếu như các component cần sử dụn state thì đến store để lấy, 
+    để thay đổi được state thì cần phải có 1 action (dispatch 1 action )
+
+- giảm được dư thừa dữ liệu
+- giảm được lượng code
+- giúp maintain app dẽ hơn
+
+- Các bước khởi tạo Context
+    B1: sử dụng React.createContext(initial) khởi tạo 1 cái context
+    B2: wrap toàn bộ cây component bằng Provider
+    B3: ở bất kỳ đâu trong component để nhận đc state thi sử dụng Consumer
+    
+
