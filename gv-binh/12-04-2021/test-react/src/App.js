@@ -1,18 +1,24 @@
-import logo from "./logo.svg";
+import React from 'react'
 import "./App.scss";
 // import { useState } from "react";
 // import Product, { Products } from "./component/Product";
 import Products from './component/Products';
-import SignIn from './component/SignIn';
+import SignIn11 from './component/SignIn';
+import  Count from './component/Count';
+
+export const CounterContext = React.createContext(0)
 
 function App() {
   return (
     <div className="App">
+      <CounterContext.Provider value={{count: 0, name: 'Ngoc'}}>
       {/* xin chao */}
       {/* <Product userName={'Ngoc'} age={20}/>
       <Products /> */}
-      {/* <Products /> */}
-     <SignIn />
+      <Products />
+     {/* <SignIn /> */}
+      <Count />
+     </CounterContext.Provider>
     </div>
   );
 }

@@ -4,6 +4,7 @@ import Table from "react-bootstrap/Table";
 import { REAL_API } from "../constants/RealApi";
 import Spinner from 'react-bootstrap/Spinner'
 import "./Products.scss";
+import { CounterContext } from "../App";
 
 class Products extends Component {
   constructor() {
@@ -43,6 +44,11 @@ class Products extends Component {
     return (
       <div>
         <p>Tôi là Products</p>
+        <CounterContext.Consumer>
+          {value => (
+            <p>{value.name}</p>
+          )}
+        </CounterContext.Consumer>
         <Table striped bordered hover>
           <thead>
             <tr>
