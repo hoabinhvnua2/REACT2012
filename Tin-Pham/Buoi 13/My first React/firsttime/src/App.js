@@ -1,10 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import Product, { Products } from './Components/Product';
 
 function App() {
   return (
     <div className="App">
-    <p>Hi Tim Tin</p>
+    I am Tin
+    <Product myName='Ngoc'/>
+    <Products />
     </div>
   );
 }
