@@ -1,13 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-import Count from './components/Count';
-import User from './components/User';
+import logo from "./logo.svg";
+import React from "react";
+import "./App.css";
+import Count from "./components/Count";
+import Show from "./components/Show";
+import { CountProvide } from "./common/CountContext";
 
 function App() {
   return (
     <div className="App">
-      <Count />
-      <User />
+      <CountProvide>
+        {/* Count là con của CountProvide */}
+        <Count />
+        {/* <User /> */}
+        <Show />
+      </CountProvide>
     </div>
   );
 }

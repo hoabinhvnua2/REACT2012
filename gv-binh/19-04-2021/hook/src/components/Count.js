@@ -1,26 +1,20 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from "react";
+import { CounterContext } from "../common/CountContext";
 
 const Count = () => {
-    const [count, setCount] = useState(0)
-    const [users, setUsers] = useState('Tin');
-    const [err, setErr] = useState('')
-
-    const handleCong = () => {
-        setCount(count + 1)
-    }
-
-    const handleTru  = () => {
-        setCount(count -1)
-    }
-    console.log('user', users)
-    return (
-        <div>
-            <p>{users}</p>
+  const {state, dispatch} = useContext(CounterContext);
+  return (
+    <div>
+      <p>xin chào</p>
+      <p>{state.count}</p>
+      <button onClick={() => dispatch({type: 'cong'})}>+</button>
+      <button onClick={() => dispatch({type: 'tru'})}>-</button>
+      {/* <p>{users}</p>
             <p>{ count }</p>
             <button onClick={handleCong}>+</button>
-            <button onClick={handleTru}>-</button>
-        </div>
-    );
+            <button onClick={handleTru}>-</button> */}
+    </div>
+  );
 };
 
 export default Count;
