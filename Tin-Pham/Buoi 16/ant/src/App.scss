@@ -1,0 +1,42 @@
+@import 'antd/dist/antd.css';
+#components-layout-demo-responsive .logo {
+  height: 32px;
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.site-layout-sub-header-background {
+  background: #fff;
+}
+
+.site-layout-background {
+  background: #fff;
+}
+
+.logo {
+  height: 32px;
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.site-layout-sub-header-background {
+  background: #fff;
+}
+
+.site-layout-background {
+  background: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+  [data-theme="dark"] .site-layout-sub-header-background {
+    background: #141414;
+  }
+
+.ant_layout {
+ height: 80vh;
+}
+
+#tim {
+  height: 100vh;
+}
