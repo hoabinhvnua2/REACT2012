@@ -37,7 +37,7 @@ const Show = () => {
     // showName() -> now là 3 
     // showName() -> now là 4 
 
-    console.log(new Date().getTime())
+    // console.log(new Date().getTime())
 
     // const result = useMemo(() => showName(), [])
 
@@ -45,7 +45,7 @@ const Show = () => {
 
     // console.log(result)
     // console.log(result1)
-    console.log(ref.current)
+    // console.log(ref.current)
     return (
         <div>
             <p>Tôi là SHow component</p>

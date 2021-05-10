@@ -22,6 +22,8 @@ const reducer = (state, action) => {
 
 const CountProvide = ({ children }) => {
     const [state, dispatch] = useReducer(reducer, initialState)
+
+    console.log(state)
     return (
         <CounterContext.Provider value={{state, dispatch}}>
             { children }
