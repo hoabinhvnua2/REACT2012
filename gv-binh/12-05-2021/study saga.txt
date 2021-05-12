@@ -1,0 +1,7 @@
+Giới thiệu các API của saga dùng để cấu hình 1 dự án
+1. Frok: sử dụng cơ non-blocking trên function (tạo ra các task nền trong task cha)
+2. call: call function, và nó trả về 1 promise.
+3. put: dúng để dispatch 1 action
+4. takeLastest: thực hiện nhiều action thi nó chỉ thực hiện và trả về kết quả của action cuối cùng (not fina)
+5. yield: chạy tuần tự khi nào trả về kêt quả thì mới thực hiện tiếp
+

@@ -3,5 +3,5 @@
 3. redux-saga
 4. redux-devtools-extension
 5. node-sass
-
-cosnt state = useSelector(state => state....)
+6. axios
+7. reselect

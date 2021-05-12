@@ -1,0 +1,1 @@
+Tạo 1 project mới tích hợp reduc và redux-saga, sau đó call api lấy về danh sách result, sau đó show ra màn hình sử dụng lib ant-design
