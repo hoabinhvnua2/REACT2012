@@ -1,29 +1,24 @@
-import axios from "axios";
+import httpClient from '../modules/core/http';
 
 const signIn = async ({ username, password }) => {
-  try {
-    const resp = await axios.post();
-    return resp;
-  } catch (error) {
-    console.log(error);
-  }
+  httpClient.post('/users/authenticate', JSON.stringify({ username, password }))
+
+  return fetch(`/users/authenticate`, request)
+  .then(handleResponse)
+  .then((user) => {
+    localStorage.setItem("user", JSON.stringify(user));
+    return user;
+  });
 };
 
 function signUp(formValues) {
-    console.log(formValues)
     const request = {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify(formValues)
       }
     
-    return fetch(`/users/register`, request).then(handleResponse)
-//   return axios({
-//     method: "post",
-//     url: "/users/register",
-//     body: JSON.stringify(formValues),
-//     headers: {'Content-Type': 'application/json'}
-//   });
+  return fetch(`/users/register`, request).then(handleResponse)
 };
 
 function handleResponse(response) {

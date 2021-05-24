@@ -89,6 +89,7 @@ export function configureFakeBackend() {
         // register user
         if (url.endsWith("/users/register") && opts.method === "POST") {
           // get new user object from post body
+          console.log('vao');
           let newUser = JSON.parse(opts.body);
 
           // validation
@@ -106,7 +107,6 @@ export function configureFakeBackend() {
             : 1;
           users.push(newUser);
           localStorage.setItem("users", JSON.stringify(users));
-
           // respond 200 OK
           resolve({ ok: true, text: () => Promise.resolve() });
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useMemo } from 'react';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -15,7 +15,8 @@ import Container from '@material-ui/core/Container';
 import { useForm } from 'react-hook-form';
 import * as yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
-import { useUser } from '../../redux/hooks/User';
+import { useAuth } from '../../redux/hooks/Auth';
+import { history } from '../../helps/history';
 
 function Copyright() {
   return (
@@ -51,6 +52,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function SignIn() {
+  const {actions, auth} = useAuth()
   const schemaSignIn = yup.object().shape({
     username: yup.string().required('This is requried!'),
     password: yup.string().required('This is required!')
@@ -61,8 +63,15 @@ export default function SignIn() {
   })
 
   const submit = (values) => {
-    console.log(values)
+    const {username, password } = values;
+    actions.signIn({username, password })
   }
+
+  useEffect(() => {
+    if(auth.data?.token) {
+      history.push('/')
+    }
+  }, [auth])
 
   return (
     <Container component="main" maxWidth="xs">

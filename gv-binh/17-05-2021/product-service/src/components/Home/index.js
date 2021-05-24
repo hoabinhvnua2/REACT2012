@@ -9,7 +9,7 @@ const Home = () => {
   };
 
   return (
-   <div></div>
+   <div>Tôi là trang chủ</div>
   );
 };
 
