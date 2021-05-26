@@ -1,0 +1,21 @@
+-Các chức gồm có: 
+    + sign-in (BB)
+    + sign-out (BB)
+    + sign-up (BB)
+    // trang tin tức
+    + Phải xem đưuọc trên mobile, tablet đối với trang tin tức
+    // trang quản trị
+    + ít nhất cso 1 chức năng (CRUD) về sản phảm hoặc task 
+    // trang bán sản phẩm
+    + phải có phần giỏ hàng và xem chi tiết giỏ hàng, có thế xóa, 
+    tăng số lượng sản phẩm trong phần xem chi tiết giỏ hàng
+    //plus
+    + login vào trang bằng face
+    + hoặc có thêm chức năng khác
+
+-Chi tiết
+    + Xây dựng giao diện với material-ui/ant-design
+    + Áp dụng react-router-dom để điều hướng trang
+    + Áp dụng redux vào quản lý state
+    + Áp dụng redux-saga vào hỗ trợ xử lý side-effect
+    + Áp dụng Yup, React-hook-form hoặc Formik

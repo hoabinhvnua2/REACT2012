@@ -1,8 +1,12 @@
 import httpClient from '../modules/core/http';
 
 const signIn = async ({ username, password }) => {
-  httpClient.post('/users/authenticate', JSON.stringify({ username, password }))
-
+  // httpClient.post('/users/authenticate', JSON.stringify({ username, password }))
+  const request = {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({ username, password })
+  }
   return fetch(`/users/authenticate`, request)
   .then(handleResponse)
   .then((user) => {
